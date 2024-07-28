@@ -1,0 +1,367 @@
+.stay-details-container {
+  // grid-column: 2;
+  display: grid;
+  grid-auto-flow: row;
+  // grid-template-columns: minmax(20px, 1fr) minmax(auto, 1000px) minmax(20px, 1fr);
+  grid-template-columns: 1fr;
+  list-style: none;
+  justify-content: center;
+  color: $clblack;
+
+  >* {
+    grid-column: 2;
+  }
+
+  .reviews-cmp {
+    .btn-add-review {
+      align-items: center;
+      background-color: #fff;
+      border: 1px solid #222;
+      border-radius: 8px;
+      color: #222;
+      display: flex;
+      font-family: cereal-Medium;
+      font-size: 1rem;
+      gap: 8px;
+      justify-content: center;
+      line-height: 20px;
+      padding: 13px 23px;
+      text-align: center;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  .review-none-container {
+    .review-none-title {
+      margin-bottom: 0.25em;
+    }
+
+    .review-none-content {
+      margin-left: 15px;
+      margin-bottom: 0.25em;
+    }
+  }
+
+  .title {
+    // font-size: 1.625rem;
+    line-height: 1.875rem;
+    margin-bottom: 0.3rem;
+
+    h4 {
+      font-family: "Circular";
+      font-size: 1.1rem;
+      color: $clgrey;
+    }
+  }
+
+  main {
+    padding: 0;
+  }
+
+  h2 {
+    font-family: "Circular-Bold";
+    color: #222222;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  .stay-dets-rating-link {
+    text-decoration: underline;
+    color: $clblack;
+  }
+
+  .apt-host-info {
+    padding-left: 24px;
+  }
+
+  .apt-dets-light-con {
+    display: flex;
+
+    .apt-dets-light-icon {
+      width: 24px;
+    }
+
+    .apt-dets-light-info {
+      padding-left: 24px;
+      margin-bottom: 0.8em;
+
+      h3 {
+        margin-bottom: 0.2rem;
+      }
+    }
+  }
+
+  .stay-dets-rating {
+    padding-bottom: 20px;
+
+    .avgRate {
+      margin-left: 6px;
+    }
+
+    .dotP {
+      margin-right: 5px;
+    }
+  }
+
+  .stay-dets-summary {
+    // padding: 0.5em;
+    padding-block: 2rem;
+    // display: grid;
+    // grid-template-columns: 1fr 370px;
+    display: grid;
+    // grid-template-columns: 1fr auto;
+    gap: 30px;
+    grid-template-columns: 1fr 340px;
+
+    justify-content: space-between;
+    // .stay-dets-highlight {
+    //   grid-row: 2;
+    // }
+
+    .summary {
+      font-size: 1.625rem;
+      font-family: "Circular-Bold";
+    }
+
+    .capacity {
+      font-family: "Circular";
+      font-size: 1.1rem;
+      color: $clblack;
+    }
+
+    .more-details {
+      width: 96%;
+    }
+
+    .aircover {
+      height: 26px;
+      width: 123px;
+      object-fit: contain;
+      // margin: 0 0 15px;
+    }
+
+    .apt-host-details {
+      border-bottom: 1px solid #ccc;
+    }
+
+    .apt-dets-highlights {
+      border-bottom: 1px solid #ccc;
+
+      h3 {
+        font-family: "Circular-Bold";
+      }
+    }
+
+    .apt-extra-dets {
+      border-bottom: 1px solid #ccc;
+    }
+  }
+
+  .apt-rating-dets-con {
+    display: grid;
+    grid-auto-flow: column;
+
+    .apt-rating-dets {
+      margin-top: 10px;
+      font-size: 16px;
+      height: 84px;
+
+      .title-rating-det {
+        margin-bottom: 2px;
+      }
+
+      .rating-det {
+        margin-bottom: 8px;
+      }
+
+      .icon-rating-det {
+        display: block;
+        height: 24px;
+        width: 24px;
+      }
+    }
+  }
+
+  .host-avatar-img {
+    height: 56px;
+    width: 56px;
+    border: 1px solid #717171;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .apt-loc-map {
+    display: flex;
+    flex-direction: column;
+
+    .apt-loc-map-title {
+      margin-bottom: 10px;
+    }
+
+    .apt-loc-map-sub-title {
+      margin-bottom: 10px;
+    }
+  }
+
+  .host-apt-det-ext {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+    justify-items: end;
+
+    .host-info-ext {
+      .host-profile-ext {
+        .host-avatar-dets {
+          margin-left: 1em;
+          margin-bottom: 1em;
+        }
+      }
+
+      .host-icon-ext {
+        margin: auto 0;
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(auto-fill, max-content);
+        margin-bottom: 1em;
+      }
+    }
+
+    .host-ctn-con {
+      align-self: center;
+      height: max-content;
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+
+
+      .host-ctn-content {
+        p {
+          margin-bottom: 8px;
+        }
+      }
+
+      .btn-host-ctn {
+        margin-top: 1.5em;
+        font-size: 16px;
+        font-weight: 600;
+        color: #222222;
+        background-color: #fff;
+        border: 1px solid black;
+        border-radius: 0.5em;
+        padding: 13px 24px 13px 23px;
+      }
+
+      .protect-host {
+        p {
+          margin: 0;
+        }
+      }
+
+      .protect-host-icon {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        margin-right: 10px;
+      }
+    }
+
+
+  }
+
+  //   @media (max-width: 550px) {
+  //     .stay-details-container {
+  //       display: grid;
+  //       grid-template-columns: 40px 1fr 40px;
+  //     }
+  //     .stay-dets-summary {
+  //       max-width: fit-content;
+  //       display: grid;
+  //       grid-template-columns: 1fr;
+  //     }
+  //   }
+}
+
+@media (max-width: 550px) {
+  .stay-details-container {
+    grid-template-columns: 1fr;
+    padding: 0.5em;
+    width: 100%;
+
+    // width: fit-content;
+    .imgs-grid {
+      width: 320px !important;
+    }
+
+    .stay-dets-summary {
+      width: 100%;
+    }
+
+    .stay-header {
+      width: 320px;
+      padding: 0;
+    }
+
+    .apt-host-details {
+      width: 320px;
+    }
+
+    .apt-extra-dets {
+      width: 320px;
+    }
+  }
+
+  .apt-loc-map {
+    width: 320px;
+  }
+}
+
+// @media (min-width: 550px) {
+//   /* grid-template-columns: repeat(auto-fill, minmax(239px, 1fr)); */
+//   // grid-template-columns: minmax(239px, 1fr) minmax(239px, 1fr);
+//   // row-gap: 40px;
+//   // column-gap: 24px;
+//   grid-template-columns: 1fr;
+// }
+// @media (min-width: 550px) {
+/* grid-template-columns: repeat(auto-fill, minmax(239px, 1fr)); */
+/* grid-template-columns: minmax(239px, 1fr) minmax(239px, 1fr); */
+/* row-gap: 40px; */
+/* column-gap: 24px; */
+//   grid-template-columns: 1fr;
+// }
+
+// @media (min-width: 950px) {
+//   // grid-template-columns: minmax(274px, 1fr) minmax(274px, 1fr) minmax(
+//   //   274px,
+//   //   1fr
+//   //   );
+//   grid-template-columns: 1fr;
+
+//   .imgs-grid {
+//     border-radius: 12px;
+//     gap: 8px;
+//     grid-template-columns: repeat(4, 1fr);
+//     grid-template-rows: 50% 50%;
+//     height: 50%;
+//     margin-top: 10px;
+//     max-height: 451.39px;
+//     overflow: hidden;
+//     width: 100%;
+//   }
+// }
+// @media (min-width: 950px) {
+/* grid-template-columns: minmax(274px, 1fr) minmax(274px, 1fr) minmax(274px, 1fr); */
+// grid-template-columns: 1fr;
+// }
+
+// @media (min-width: 1128px) {
+//   // grid-template-columns: repeat(auto-fill, minmax(244px, 1fr));
+// }
+// }

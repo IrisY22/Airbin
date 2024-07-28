@@ -1,0 +1,43 @@
+.dashboard-resarvation-container {
+  .reject-btn {
+    padding: 7px 13px;
+    background-color: #fef0f0;
+    color: #f56c6c;
+    border: 1px solid #f56c6c;
+    border-radius: 4px;
+    &:hover {
+      transition: 0.3s ease-out;
+      background-color: #f56c6c;
+      color: #fef0f0;
+      border: 1px solid #fef0f0;
+    }
+  }
+  .accept-btn {
+    padding: 7px 10px;
+    background-color: #f0f9eb;
+    color: #67c23a;
+    border: 1px solid #67c23a;
+    border-radius: 4px;
+    &:hover {
+      transition: 0.3s linear;
+      color: #f0f9eb;
+      background-color: #67c23a;
+      border: 1px solid #f0f9eb;
+    }
+  }
+}
+@media (max-width: 750px){
+  .main-container{
+    grid-template-columns: 1fr;
+  }  
+}
+
+.acceptedStatus {
+  color: #67c23a;
+}
+.rejectedStatus {
+  color: #f56c6c;
+}
+.pendingStatus {
+  color: black;
+}

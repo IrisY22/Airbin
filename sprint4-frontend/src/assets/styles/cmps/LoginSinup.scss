@@ -1,0 +1,83 @@
+.card {
+  min-width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+  // border-top: 1px solid #ccc;
+  // border-radius: 8px;
+  // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  // background-color: #fff;
+}
+
+.login-signup {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 8px; // ASI
+}
+
+input {
+  width: 100%;
+  padding: 24px;
+  // margin-bottom: 1px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.demo-signup-section {
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    color: black;
+    border: 1px solid #ddd;
+  }
+}
+
+.login-btn {
+  background-image: radial-gradient(circle,
+      #ff385c 0,
+      #e61e4d 27.5%,
+      #e31c5f 40%,
+      #d70466 57.5%,
+      #bd1e59 75%,
+      #bd1e59 100%);
+  background-size: 200% 200%;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-family: "Circular-Medium";
+  font-size: 1.2rem;
+  min-width: 200px;
+  padding: 13px 23px;
+  text-align: center;
+  width: 100%;
+  transition: background-image 0.3s;
+  // font-size: 36px;
+  // padding: 0.5em;
+}
+
+.section-divider {
+  margin: 20px 0;
+  color: #999;
+}
+
+@media (max-width: 550px) {
+  .card {
+    width: 100%;
+  }
+
+
+  .demo-signup-section {
+    button {
+      font-size: 36px;
+      padding: 0.5em;
+    }
+  }
+
+  input {
+    font-size: 24px;
+    padding: 24px;
+  }
+}
